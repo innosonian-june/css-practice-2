@@ -1,148 +1,132 @@
 <html>
-    <head>
-        <title>CSS Practice 1</title>
-        <link rel="stylesheet" href="./css-practice-1.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet" />
-    </head>
-    <body>
-        <div class="section1">
-            <div class="left-box">
-                <div class="left-box-item">
-                    <div class="font-big color-white">
-                        Landing Page for Apps
-                    </div>
-                    <div class="font-small color-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Quisquam, quos.
-                    </div>
-                    <div class="button-box-res">
-                        <button class="font-small">Show More</button>
-                    </div>
-                </div>
+  <head>
+    <title>CSS Practice 1</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="bg-light min-vh-100 p-4">
+      <!-- 레이아웃 -->
+      <div class="container d-flex flex-column gap-3">
+        <div class="card d-flex flex-lg-row flex-column p-3">
+          <div class="flex-grow-1 p-3 d-flex gap-3">
+            <div>
+              <img src="profile-pic.png" alt="profile" />
             </div>
-            <div class="right-box">
-                <div class="right-box-item">
-                    <img src="./img/iphone.png" alt="app" />
-                </div>
+            <div class="d-flex flex-column gap-1">
+              <span class="fs-3">Killian Sven</span>
+              <span>Front-end Developer</span>
+              <span style="color: #6fbaf8">
+                <i class="fa-solid fa-location-dot"></i>
+                서울 마포구</span
+              >
+              <button class="btn btn-custom">Contact</button>
             </div>
+          </div>
+
+          <div class="border-start"></div>
+
+          <div
+            class="p-3 d-flex justify-content-start align-items-center px-lg-5"
+          >
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-center">
+                <span class="fw-bold" style="width: 150px">Location</span>
+                <span>서울 마포구</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="fw-bold" style="width: 150px">Age</span>
+                <span>90년생</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="fw-bold" style="width: 150px">Experience</span>
+                <span>신입</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="fw-bold" style="width: 150px">School</span>
+                <span>천조국대 토목학과</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Profile</a
+              >
+            </li>
+          </ul>
         </div>
 
-        <div class="section2">
-            <div class="section2-box flex-column">
-                <div class="font-big color-black">Landing Page for Apps</div>
-                <div class="font-small color-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quisquam, quos.
-                </div>
-                <div class="text-center">
-                    <button class="font-small">Show Portfolio</button>
-                </div>
+        <div class="row g-3">
+          <div class="col-12 col-lg-3">
+            <div class="card p-4">
+              <h5 class="card-title">WORKS</h5>
+              <div class="d-flex flex-column">
+                <span class="card-text">Landing page design</span>
+                <span class="card-text">Flyer design</span>
+                <span class="card-text">Vue.js To-do app</span>
+                <span class="card-text">Shopping page design</span>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card p-4">
+              <div class="border-bottom pb-3">
+                <h5 class="card-title">ABOUT</h5>
+                <p class="card-text">
+                  I am a front-end designer with a passion for creating. I have
+                  dealt lots of projects with HTML, CSS, and JavaScript. I am a
+                  quick learner and I am always looking for new challenges.
+                </p>
+              </div>
+              <div class="pt-3">
+                <h5 class="card-title">SKILLS</h5>
+                <p class="card-text">
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >HTML5</span
+                  >
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >JavaScript</span
+                  >
+                  <span class="badge rounded-pill text-bg-secondary">CSS3</span>
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >Illustrator</span
+                  >
+                  <span class="badge rounded-pill text-bg-secondary"
+                    >Photoshop</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="card p-4 d-flex flex-column gap-1 align-items-center">
+              <i
+                class="fa-solid fa-fire-flame-simple"
+                style="font-size: 100px; color: #6fbaf8"
+              ></i>
+              <span>Find me at Linkedout.com</span>
+              <button class="btn btn-custom">Sign Up</button>
+              <span style="color: #6fbaf8">Already a member?</span>
+            </div>
+          </div>
         </div>
-
-        <div class="section3">
-            <div class="section3-box color-white flex-column">
-                <div class="font-small">services</div>
-                <div class="font-middle">What We Offer</div>
-            </div>
-            <div class="section3-box2">
-                <div class="section3-box2-item">
-                    <div class="section3-box2-item-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="color-white">
-                        <div class="font-middle">Responsive</div>
-                        <div class="font-small">Quisquam, quos.</div>
-                    </div>
-                </div>
-                <div class="section3-box2-item">
-                    <div class="section3-box2-item-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="color-white">
-                        <div class="font-middle">Responsive</div>
-                        <div class="font-small">Quisquam, quos.</div>
-                    </div>
-                </div>
-                <div class="section3-box2-item">
-                    <div class="section3-box2-item-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="color-white">
-                        <div class="font-middle">Responsive</div>
-                        <div class="font-small">Quisquam, quos.</div>
-                    </div>
-                </div>
-                <div class="section3-box2-item">
-                    <div class="section3-box2-item-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="color-white">
-                        <div class="font-middle">Responsive</div>
-                        <div class="font-small">Quisquam, quos.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section2">
-            <div class="section2-box flex-column">
-                <div class="font-small">services</div>
-                <div class="font-middle">What We Offer</div>
-            </div>
-        </div>
-
-        <div class="section5">
-            <div class="section5-box font-14 bg-img-1 flex-column">
-                <div class="font-middle color-white">Responsive Design</div>
-                <div class="font-small color-white">
-                    Quisquam, quos, Quisquam, quos, Quisquam, quos, Quisquam,
-                </div>
-                <div class="animation-box"></div>
-            </div>
-            <div class="section5-box font-14 bg-img-2 flex-column">
-                <div class="font-middle color-white">Responsive Design</div>
-                <div class="font-small color-white">
-                    Quisquam, quos, Quisquam, quos, Quisquam, quos, Quisquam,
-                </div>
-                <div class="animation-box"></div>
-            </div>
-            <div class="section5-box font-14 bg-img-3 flex-column">
-                <div class="font-middle color-white">Responsive Design</div>
-                <div class="font-small color-white">
-                    Quisquam, quos, Quisquam, quos, Quisquam, quos, Quisquam,
-                </div>
-                <div class="animation-box"></div>
-            </div>
-            <div class="section5-box font-14 bg-img-4 flex-column">
-                <div class="font-middle color-white">Responsive Design</div>
-                <div class="font-small color-white">
-                    Quisquam, quos, Quisquam, quos, Quisquam, quos, Quisquam,
-                </div>
-                <div class="animation-box"></div>
-            </div>
-        </div>
-
-        <div class="section6">
-            <div class="social-icons">
-                <a href="#" class="social-icon">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <div class="copyright">copyright 2025</div>
-        </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
